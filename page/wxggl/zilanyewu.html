@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>员工信息</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <!-- load css -->
+    <link rel="stylesheet" type="text/css" href="../../css/layui.css?v=1.0.9">
+    <link rel="stylesheet" type="text/css" href="../../css/global.css">
+    <style>
+        body{
+            padding: 10px 10px 0px 5px;
+            background: white;
+        }
+        .code{
+            font-weight: bold!important;
+            color: #1E9FFF!important;
+        }
+        .guz{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<section class="panel panel-padding border">
+    <form class="layui-form">
+        <div class="layui-inline">
+            <label class="layui-input-inline">状态：</label>
+            <div class="layui-input-inline">
+                <select name="modules" lay-verify="required" lay-search="">
+                    <option value="">状态</option>
+                    <option value="1">离职</option>
+                    <option value="2">在职</option>
+                </select>
+            </div>
+            <div class="layui-inline" style="margin-right: 40px">
+                <!--<label class="layui-form-label" style="width: 130px">搜索：</label>-->
+                <div class="layui-input-inline">
+                    <input type="text" placeholder="请输入姓名或工号" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <a><i class="layui-icon">&#xe615;查询</i> </a>
+            <!--<a><i class="layui-icon add">&#xe654;新增</i> </a>-->
+        </div>
+    </form>
+</section>
+<form class="layui-form">
+    <table class="layui-table">
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td width="60">姓名</td>
+            <td width="100">工号</td>
+            <td width="150">企业名称</td>
+            <td width="110">税号</td>
+            <td width="120">负责人姓名</td>
+            <td width="90">负责人电话</td>
+            <td width="80">维修总费用</td>
+            <td width="130">操作</td>
+        </tr>
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td>张三</td>
+            <td>61230122</td>
+            <td>西安久诺网络技术有限公司</td>
+            <td><span class="code">5844552MH2581</span></td>
+            <td>张三</td>
+            <td>17868804701</td>
+            <td><img src="../image/money.png" alt="" class="statue" width="20">&nbsp;600元</td>
+            <td>
+                <a><i class="layui-icon wxg_xq">&#xe60a;查看详情</i> </a>
+            </td>
+        </tr>
+    </table>
+</form>
+<!--员工详情-->
+<div id="wxg_xq" style="display: none;padding: 10px">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: -3px">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">员工信息</legend>
+    </fieldset>
+    <section class="panel panel-padding border layui-form">
+        <div class="layui-inline">
+            <div class="layui-inline" >
+                <label class="layui-form-label" style="width: 130px">姓名：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 230px"  value="张三" readonly="true"   lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline" >
+                <label class="layui-form-label" style="width: 130px">工号：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 230px"  value="51148500" readonly="true" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline" >
+                <label class="layui-form-label" style="width: 130px">电话：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 230px"   value="17868804701" readonly="true" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label" style="width: 130px">身份证号：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 230px"   value="612301199510123441" readonly="true" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline" >
+                <label class="layui-form-label" style="width: 130px">性别：</label>
+                <div class="layui-input-inline">
+                    <input type="radio" name="sex1" value="男" title="男" checked="">
+                    <input type="radio" name="sex2" value="女" title="女">
+                </div>
+            </div>
+        </div>
+    </section>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 18px">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">企业信息</legend>
+    </fieldset>
+    <section class="panel panel-padding border layui-form">
+        <div class="layui-inline">
+            <div class="layui-inline" >
+                <label class="layui-form-label" style="width: 130px">企业名称：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 230px"  value="西安久诺网络技术有限公司" readonly="true"   lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline" >
+                <label class="layui-form-label" style="width: 130px">税号：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 230px"  value="51148500" readonly="true" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline" >
+                <label class="layui-form-label" style="width: 130px">地址：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 230px"   value="西安欧亚学院" readonly="true" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label" style="width: 130px">联系人：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 230px"   value="张三" readonly="true" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline" >
+                <label class="layui-form-label" style="width: 130px">联系电话：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 230px"   value="17868804701" readonly="true" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+    </section>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 18px">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">维修设备清单</legend>
+    </fieldset>
+    <form class="layui-form">
+        <table class="layui-table">
+            <tr>
+                <td width="20">编号</td>
+                <td width="150">维修设备名称</td>
+                <td width="130">出厂编码</td>
+                <td width="130">出厂时间</td>
+                <td width="100">规格型号</td>
+                <td width="180">生产厂家</td>
+                <td width="130">维修费用</td>
+                <td width="122">操作</td>
+            </tr>
+            <tr>
+                <td width="20">01</td>
+                <td>TCL王牌电视机</td>
+                <td><span class="code">96558412M2522</span></td>
+                <td><img src="../image/time.png" alt="" class="statue" width="15">&nbsp;2016-10-10</td>
+                <td><img src="../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
+                <td>陕西电视机厂有限公司</td>
+                <td><img src="../image/money.png" alt="" class="statue" width="19">&nbsp;500元</td>
+                <td><a><i class="layui-icon show_sbxx">&#xe60a;查看</i> </a></td>
+            </tr>
+            <tr>
+                <td width="20">02</td>
+                <td>TCL王牌电视机</td>
+                <td><span class="code">96558412M2522</span></td>
+                <td><img src="../image/time.png" alt="" class="statue" width="15">&nbsp;2016-10-10</td>
+                <td><img src="../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
+                <td>陕西电视机厂有限公司</td>
+                <td><img src="../image/money.png" alt="" class="statue" width="19">&nbsp;500元</td>
+                <td><a><i class="layui-icon show_sbxx">&#xe60a;查看</i> </a></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<!--设备信息-->
+<div id="show_sbxx" style="display: none;padding: 10px;">
+    <table class="layui-table layui-form">
+        <tr>
+            <td width="50">故障</td>
+            <td width="320">图片</td>
+            <td>描述</td>
+        </tr>
+        <tr>
+            <td>故障1</td>
+            <td>
+                <img src="../image/sheb.jpg" alt="" class="guz">
+                <img src="../image/sheb.jpg" alt="" class="guz">
+                <img src="../image/sheb.jpg" alt="" class="guz">
+                <img src="../image/sheb.jpg" alt="" class="guz">
+                <img src="../image/sheb.jpg" alt="" class="guz">
+            </td>
+            <td>该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪</td>
+        </tr>
+        <tr>
+            <td>故障2</td>
+            <td>
+                <img src="../image/sheb.jpg" alt="" class="guz">
+                <img src="../image/sheb.jpg" alt="" class="guz">
+                <img src="../image/sheb.jpg" alt="" class="guz">
+                <img src="../image/sheb.jpg" alt="" class="guz">
+                <img src="../image/sheb.jpg" alt="" class="guz">
+            </td>
+            <td>该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪</td>
+        </tr>
+        <tr>
+            <td>工作照</td>
+            <td>
+                <img src="../image/sheb.jpg" alt="" class="guz">
+            </td>
+            <td>工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照</td>
+        </tr>
+    </table>
+</div>
+</body>
+<script src="../../js/layui/layui.js"></script>
+<script src="../../js/jquery-1.12.4.min.js"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function(){
+        var form = layui.form()
+            ,layer = layui.layer
+            ,layedit = layui.layedit
+            ,laydate = layui.laydate;
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+        //自定义验证规则
+        form.verify({
+            title: function(value){
+                if(value.length < 5){
+                    return '标题至少得5个字符啊';
+                }
+            }
+            ,pass: [/(.+){6,12}$/, '密码必须6到12位']
+            ,content: function(value){
+                layedit.sync(editIndex);
+            }
+        });
+        //监听提交
+        form.on('submit(demo1)', function(data){
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            })
+            return false;
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $(".wxg_xq").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'员工详情',
+                area: ['100%', '100%'],
+                content: $('#wxg_xq')
+            });
+        });
+        $(".show_sbxx").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'设备详情查看',
+                area: ['100%', '100%'],
+                content: $('#show_sbxx')
+            });
+        })
+    })
+</script>
+</html>

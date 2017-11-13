@@ -1,0 +1,127 @@
+{
+  "data": {
+    "list": [
+      {
+        "id": 3,
+        "url": "",
+        "name": "维修工管理",
+        "iconfont": "&#xe689;",
+        "sub": [
+          {
+            "id": 10,
+            "url": "/juliang/page/wxggl/weixiugongInfo.html",
+            "name": "维修工信息",
+            "iconfont": "&#xe672;"
+          },
+          {
+            "id": 11,
+            "url": "/juliang/page/wxggl/zilanyewu.html",
+            "name": "自揽业务管理",
+            "iconfont": "&#xe689;"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "url": "",
+        "name": "业务管理",
+        "iconfont": "&#xe689;",
+        "sub": [
+          {
+            "id": 13,
+            "url": "",
+            "name": "维修管理",
+            "iconfont": "&#xe646;",
+            "sub": [
+              {
+                "id": 13,
+                "url": "/juliang/page/ywgl/weixiuManger/wxManger.html",
+                "name": "维修申报列表",
+                "iconfont": ""
+              },
+              {
+                "id": 13,
+                "url": "/juliang/page/ywgl/weixiuManger/qiyexxManger.html",
+                "name": "企业信息管理",
+                "iconfont": ""
+              },
+              {
+                "id": 13,
+                "url": "/juliang/page/ywgl/weixiuManger/weixiushenheshenbao.html",
+                "name": "维修申报审核",
+                "iconfont": ""
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "url": "",
+            "name": "维保管理",
+            "iconfont": "&#xe631;",
+            "sub": [
+              {
+                "id": 13,
+                "url": "/juliang/page/ywgl/weibaoManger/weibaoXXGL.html",
+                "name": "维保企业信息管理",
+                "iconfont": ""
+              },
+              {
+                "id": 13,
+                "url": "/juliang/page/ywgl/weibaoManger/weibaoshenbaoshenhe.html",
+                "name": "维保审核申报",
+                "iconfont": ""
+              },
+              {
+                "id": 13,
+                "url": "/juliang/page/ywgl/weibaoManger/wxhtManger.html",
+                "name": "维保合同管理",
+                "iconfont": ""
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "url": "",
+            "name": "售后管理",
+            "iconfont": "&#xe696;",
+            "sub": [
+              {
+                "id": 13,
+                "url": "/juliang/page/ywgl/shouhou/fuwuqiyeInfo.html",
+                "name": "服务企业信息管理",
+                "iconfont": ""
+              },
+              {
+                "id": 13,
+                "url": "/juliang/page/ywgl/shouhou/weituoqiyeInfo.html",
+                "name": "委托企业信息管理",
+                "iconfont": ""
+              },
+              {
+                "id": 13,
+                "url": "/juliang/page/ywgl/shouhou/shouhoushenbaoshenhe.html",
+                "name": "售后申报审核",
+                "iconfont": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "url": "",
+        "name": "学生信息管理",
+        "iconfont": "&#xe613;",
+        "sub": [
+          {
+            "id": 5,
+            "url": "/jqadmin/html/studentInfo.html",
+            "name": "学生信息管理",
+            "iconfont": "&#xe637;"
+          }
+        ]
+      }
+    ]
+  },
+  "status": 200
+}

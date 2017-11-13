@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>员工信息</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <!-- load css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/layui.css?v=1.0.9">
+    <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+    <style>
+        body{
+            padding: 10px 10px 0 5px;
+            background: white;
+        }
+        .code{
+            font-weight: bold!important;
+            color: #1E9FFF!important;
+        }
+        .guz{
+            width: 100px;
+            height: 100px;
+        }
+        .pj{
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+<section class="panel panel-padding border">
+    <form class="layui-form">
+        <div class="layui-inline">
+            <label class="layui-input-inline">状态：</label>
+            <div class="layui-input-inline">
+                <select name="modules" lay-verify="required" lay-search="">
+                    <option value="">请选择状态</option>
+                    <option value="1">已申报</option>
+                    <option value="2">待确认</option>
+                    <option value="2">待评价</option>
+                    <option value="2">已完成</option>
+                </select>
+            </div>
+            <div class="layui-inline" style="margin-right: 40px">
+                <!--<label class="layui-form-label" style="width: 130px">搜索：</label>-->
+                <div class="layui-input-inline">
+                    <input type="text" placeholder="请输入设备名称" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <a><i class="layui-icon">&#xe615;&nbsp;查询</i> </a>
+            <!--<a><i class="layui-icon add">&#xe640;&nbsp;批量删除</i> </a>-->
+        </div>
+    </form>
+</section>
+<form class="layui-form">
+    <table class="layui-table">
+        <tr>
+            <td>编号</td>
+            <td>企业名称</td>
+            <td>设备名称</td>
+            <td>生产厂家</td>
+            <td>出厂编号</td>
+            <td>状态</td>
+            <td>操作</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>西安久诺网络技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">912415646MH45</span></td>
+            <td><img src="../../image/5.png" width="25" class="statue" alt="">待派工</td>
+            <td>
+                <a><i class="layui-icon xq">&#xe60a;&nbsp;查看详情</i></a>
+            </td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>西安久诺网络技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">912415646MH45</span></td>
+            <td><img src="../../image/1.png" width="25" class="statue" alt="">待确认</td>
+            <td>
+                <a><i class="layui-icon xq">&#xe60a;&nbsp;查看详情</i></a>
+            </td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>西安久诺网络技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">912415646MH45</span></td>
+            <td><img src="../../image/2.png" width="25" class="statue" alt="">待评价</td>
+            <td>
+                <a><i class="layui-icon xq">&#xe60a;&nbsp;查看详情</i></a>
+            </td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>西安久诺网络技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">912415646MH45</span></td>
+            <td><img src="../../image/6.png" width="25" class="statue" alt="">已完成</td>
+            <td>
+                <a><i class="layui-icon xq">&#xe60a;&nbsp;查看详情</i></a>
+            </td>
+        </tr>
+    </table>
+</form>
+<!--详情-->
+<div id="xq" style="display: none;padding: 10px">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: -3px">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">维修企业信息</legend>
+    </fieldset>
+    <section class="panel panel-padding border">
+        <form class="layui-form">
+            <div class="layui-inline">
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">企业名称：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="西安久诺网络技术有限公司" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">企业税号：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="1524564612MH" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">地址：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="西安欧亚学院" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">联系人：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="代江平" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">联系电话：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="17868804701" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 15px">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">维修设备</legend>
+    </fieldset>
+    <table class="layui-table">
+        <tr>
+            <td width="30">编号</td>
+            <td width="250">维修设备名称</td>
+            <td width="170">出厂编码</td>
+            <td width="220">生产厂家</td>
+            <td width="120">等级</td>
+            <td>规格型号</td>
+            <td>操作</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>王牌电视机</td>
+            <td><span class="code">678678899KHGHkj</span></td>
+            <td>陕西省电视机厂</td>
+            <td><img src="../../image/dengji.png" alt="" class="statue" width="20">&nbsp;2</td>
+            <td><img src="../../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
+            <td><a><i class="layui-icon show_sbxx">&#xe60a;查看</i> </a></td>
+        </tr>
+    </table>
+    <div class="layui-inline" style="margin-left: 43%;margin-top: 40px">
+        <div class="layui-input-inline">
+            <a class="layui-btn layui-btn-small paigong" lay-filter="demo1">
+                派工
+            </a>
+            <a class="layui-btn layui-btn-small layui-btn-normal"  lay-filter="demo1">
+                取消
+            </a>
+        </div>
+    </div>
+    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;以上是待派工时的页面显示-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;以下是待确认时的页面显示-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 15px">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">维修合同</legend>
+    </fieldset>
+    <input type="file" name="file" class="layui-upload-file">
+    <span style="color: grey;margin-left: 20px">*在此处上传合同照片</span>
+    <div class="layui-inline" style="margin-left: 15%;margin-top: 40px">
+        <div class="layui-input-inline">
+            <a class="layui-btn layui-btn-small" lay-filter="demo1">
+                确认
+            </a>
+            <a class="layui-btn layui-btn-small pingjia" lay-filter="demo1">
+                评价
+            </a>
+            <a class="layui-btn layui-btn-small tousu" lay-filter="demo1">
+                投诉
+            </a>
+            <a class="layui-btn layui-btn-small layui-btn-normal"  lay-filter="demo1">
+                取消
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+<!--设备信息查看、-->
+<div id="show_sbxx" style="display: none;padding: 10px">
+    <table class="layui-table layui-form">
+        <tr>
+            <td width="50">故障</td>
+            <td width="320">图片</td>
+            <td>描述</td>
+        </tr>
+        <tr>
+            <td>故障1</td>
+            <td>
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+            </td>
+            <td>该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪</td>
+        </tr>
+        <tr>
+            <td>故障2</td>
+            <td>
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+            </td>
+            <td>该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪</td>
+        </tr>
+        <tr>
+            <td>工作照</td>
+            <td>
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+            </td>
+            <td>工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照</td>
+        </tr>
+    </table>
+</div>
+<!--派工-->
+<div style="display: none;padding: 10px;text-align: center" id="paigong">
+    <table class="layui-table layui-form" style="width: 200px;margin-left: 40px">
+        <tr>
+            <td width="30"><input type="checkbox" lay-skin="primary"></td>
+            <td width="50">姓名</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" lay-skin="primary"></td>
+            <td>张三</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" lay-skin="primary"></td>
+            <td>李四</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" lay-skin="primary"></td>
+            <td>王五</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" lay-skin="primary"></td>
+            <td>赵六</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" lay-skin="primary"></td>
+            <td>冯七</td>
+        </tr>
+    </table>
+    <div style="margin-top: 40px">
+        <input type="button" lay-skin="primary" class="layui-btn" value="确认">
+    </div>
+</div>
+<!--评价-->
+<div id="pingjia" style="display: none;padding: 10px;text-align: center;">
+    <table class="layui-table" >
+        <tr >
+            <td style="border: 0"><span style="color: #009688;font-size: 18px">评价</span></td>
+        </tr>
+        <tr>
+            <td style="border: 0">
+                <span style="font-size: 17px;position:absolute;margin-top: 10px;margin-left: -110px;">星级评价:</span>
+                <img src="../../image/pj1.png" class="pj" alt="">
+                <img src="../../image/pj2.png" class="pj" alt="">
+                <img src="../../image/pj2.png" class="pj" alt="">
+                <img src="../../image/pj2.png" class="pj" alt="">
+                <img src="../../image/pj2.png" class="pj" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 0">
+                <div class="layui-input-block">
+                    <textarea placeholder="请输入评价内容" class="layui-textarea" style="margin-left: -15px;margin-top: 20px"></textarea>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+    <div class="layui-inline" style="margin-top: 30px">
+        <div class="layui-input-inline">
+            <a class="layui-btn layui-btn-small" lay-filter="demo1">
+                确认
+            </a>
+        </div>
+    </div>
+    <!--<div>-->
+    <!--<div style="margin-top: 20px">-->
+
+    <!--</div>-->
+    <!--</div>-->
+</div>
+<!--投诉-->
+<div id="tousu" style="display: none;padding: 10px;text-align: center">
+    <span>投诉</span>
+    <div style="width: 80%;margin-left: 13%">
+        <textarea placeholder="请输入评价内容" class="layui-textarea" style="margin-left: -15px;margin-top: 20px;height: 130px"></textarea>
+    </div>
+    <div class="layui-inline" style="margin-top: 30px">
+        <div class="layui-input-inline">
+            <a class="layui-btn layui-btn-small" lay-filter="demo1">
+                确认
+            </a>
+            <a class="layui-btn layui-btn-small" lay-filter="demo1">
+                取消
+            </a>
+        </div>
+    </div>
+</div>
+<script src="../../../js/layui/layui.js"></script>
+<script src="../../../js/jquery-1.12.4.min.js"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate','upload','jquery'], function(){
+        var form = layui.form()
+            ,layer = layui.layer
+            ,layedit = layui.layedit
+            ,laydate = layui.laydate;
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+        //自定义验证规则
+        form.verify({
+            title: function(value){
+                if(value.length < 5){
+                    return '标题至少得5个字符啊';
+                }
+            }
+            ,pass: [/(.+){6,12}$/, '密码必须6到12位']
+            ,content: function(value){
+                layedit.sync(editIndex);
+            }
+        });
+        //监听提交
+        form.on('submit(demo1)', function(data){
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            })
+            return false;
+        });
+        layui.upload({
+            url: '' //上传接口
+            ,success: function(res){ //上传成功后的回调
+                console.log(res)
+            }
+        });
+
+        layui.upload({
+            url: '/test/upload.json'
+            ,elem: '#test' //指定原始元素，默认直接查找class="layui-upload-file"
+            ,method: 'get' //上传接口的http类型
+            ,success: function(res){
+                LAY_demo_upload.src = res.url;
+            }
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $(".xq").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'详情',
+                area: ['100%', '100%'],
+                content: $('#xq')
+            });
+        });
+        $(".show_sbxx").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'详情',
+                area: ['100%', '100%'],
+                content: $('#show_sbxx')
+            });
+        });
+        $(".paigong").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'派工',
+                area: ['300px', '500px;'],
+                content: $('#paigong')
+            });
+        });
+        $(".pingjia").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'评价',
+                area: ['700px', '400px;'],
+                content: $('#pingjia')
+            });
+        });
+        $(".tousu").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'投诉',
+                area: ['700px', '360px;'],
+                content: $('#tousu')
+            });
+        });
+
+        $(".pj").on("click",function () {
+            $(this).attr("src","../../image/pj1.png");
+            $(this).prevAll(".pj").attr("src","../../image/pj1.png");
+            $(this).nextAll(".pj").attr("src","../../image/pj2.png");
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,28 @@
+.layui-icon{
+    font-size: 14px;
+    color: #1E9FFF;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.layui-icon:hover{
+    text-decoration: underline;
+}
+tr td{
+    padding:6px!important;
+    font-size: 12px!important;
+}
+.statue{
+    margin-top: -4px;
+}
+select,input{
+    height: 35px!important;
+}
+.border{
+    border: 1px solid gainsboro;
+    /*border-radius: 5px;*/
+    padding: 10px 10px 10px 10px;
+}
+.star{
+    color: orange;
+    font-size: 18px;
+}

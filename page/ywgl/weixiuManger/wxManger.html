@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>员工信息</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <!-- load css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/layui.css?v=1.0.9">
+    <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+    <style>
+        body{
+            padding: 10px 10px 0px 5px;
+            background: white;
+        }
+        .code{
+            font-weight: bold!important;
+            color: #1E9FFF!important;
+        }
+    </style>
+</head>
+<body>
+<section class="panel panel-padding border">
+    <form class="layui-form">
+        <div class="layui-inline">
+            <label class="layui-input-inline">状态：</label>
+            <div class="layui-input-inline">
+                <select name="modules" lay-verify="required" lay-search="">
+                    <option value="">请选择状态</option>
+                    <option value="1">已申报</option>
+                    <option value="2">待确认</option>
+                    <option value="2">待评价</option>
+                    <option value="2">已完成</option>
+                </select>
+            </div>
+            <div class="layui-inline" style="margin-right: 40px">
+                <!--<label class="layui-form-label" style="width: 130px">搜索：</label>-->
+                <div class="layui-input-inline">
+                    <input type="text" placeholder="请输入设备名称" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <a><i class="layui-icon">&#xe615;&nbsp;查询</i> </a>
+            <a><i class="layui-icon add">&#xe640;&nbsp;批量删除</i> </a>
+        </div>
+    </form>
+</section>
+<form action="" class="layui-form">
+    <table class="layui-table">
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td>维修公司名称</td>
+            <td>设备名称</td>
+            <td>生产厂家</td>
+            <td>出厂编号</td>
+            <td>状态</td>
+            <td>操作</td>
+        </tr>
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td>西安电力技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">MHG1548612023</span></td>
+            <td><img src="../../image/5.png" width="25" class="statue" alt="">已申报</td>
+            <td>
+                <a><i class="layui-icon">&#xe642;&nbsp;修改</i> </a>
+                <a><i class="layui-icon">&#xe60a;&nbsp;详情</i> </a>
+                <a><i class="layui-icon add">&#xe640;&nbsp;删除</i> </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td>西安电力技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">MHG1548612023</span></td>
+            <td><img src="../../image/6.png" width="25" class="statue" alt="">已完成</td>
+            <td>
+                <!--<a><i class="layui-icon">&#xe642;&nbsp;修改</i> </a>-->
+                <a><i class="layui-icon">&#xe60a;&nbsp;详情</i> </a>
+                <a><i class="layui-icon add">&#xe640;&nbsp;删除</i> </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td>西安电力技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">MHG1548612023</span></td>
+            <td><img src="../../image/1.png" width="25" class="statue" alt="">待评价</td>
+            <td>
+                <a><i class="layui-icon">&#xe600;&nbsp;评价</i> </a>
+                <a><i class="layui-icon">&#xe60a;&nbsp;详情</i> </a>
+                <a><i class="layui-icon add">&#xe640;&nbsp;删除</i> </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td>西安电力技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">MHG1548612023</span></td>
+            <td><img src="../../image/2.png" width="25" class="statue" alt="">待确认</td>
+            <td>
+                <a><i class="layui-icon">&#xe616;&nbsp;确认</i> </a>
+                <a><i class="layui-icon">&#xe60a;&nbsp;详情</i> </a>
+                <a><i class="layui-icon add">&#xe640;&nbsp;删除</i> </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td>西安电力技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">MHG1548612023</span></td>
+            <td><img src="../../image/5.png" width="25" class="statue" alt="">已申报</td>
+            <td>
+                <a><i class="layui-icon">&#xe642;&nbsp;修改</i> </a>
+                <a><i class="layui-icon">&#xe60a;&nbsp;详情</i> </a>
+                <a><i class="layui-icon add">&#xe640;&nbsp;删除</i> </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td>西安电力技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">MHG1548612023</span></td>
+            <td><img src="../../image/6.png" width="25" class="statue" alt="">已完成</td>
+            <td>
+                <!--<a><i class="layui-icon">&#xe642;&nbsp;修改</i> </a>-->
+                <a><i class="layui-icon">&#xe60a;&nbsp;详情</i> </a>
+                <a><i class="layui-icon add">&#xe640;&nbsp;删除</i> </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td>西安电力技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">MHG1548612023</span></td>
+            <td><img src="../../image/1.png" width="25" class="statue" alt="">待评价</td>
+            <td>
+                <a><i class="layui-icon">&#xe600;&nbsp;评价</i> </a>
+                <a><i class="layui-icon">&#xe60a;&nbsp;详情</i> </a>
+                <a><i class="layui-icon add">&#xe640;&nbsp;删除</i> </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="20"><input type="checkbox" lay-skin="primary"></td>
+            <td>西安电力技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>陕西省电视机厂</td>
+            <td><span class="code">MHG1548612023</span></td>
+            <td><img src="../../image/2.png" width="25" class="statue" alt="">待确认</td>
+            <td>
+                <a><i class="layui-icon">&#xe616;&nbsp;确认</i> </a>
+                <a><i class="layui-icon">&#xe60a;&nbsp;详情</i> </a>
+                <a><i class="layui-icon add">&#xe640;&nbsp;删除</i> </a>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+<script src="../../../js/layui/layui.js"></script>
+<script src="../../../js/jquery-1.12.4.min.js"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function(){
+        var form = layui.form()
+            ,layer = layui.layer
+            ,layedit = layui.layedit
+            ,laydate = layui.laydate;
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+        //自定义验证规则
+        form.verify({
+            title: function(value){
+                if(value.length < 5){
+                    return '标题至少得5个字符啊';
+                }
+            }
+            ,pass: [/(.+){6,12}$/, '密码必须6到12位']
+            ,content: function(value){
+                layedit.sync(editIndex);
+            }
+        });
+        //监听提交
+        form.on('submit(demo1)', function(data){
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            })
+            return false;
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $(".wxg_xq").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'员工详情',
+                area: ['100%', '100%'],
+                content: $('#wxg_xq')
+            });
+        });
+    })
+</script>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>员工信息</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <!-- load css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/layui.css?v=1.0.9">
+    <link rel="stylesheet" type="text/css" href="../../../css/global.css">
+    <style>
+        body{
+            padding: 10px 10px 0px 5px;
+            background: white;
+        }
+        .code{
+            font-weight: bold!important;
+            color: #1E9FFF!important;
+        }
+        .guz{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<section class="panel panel-padding border">
+    <form class="layui-form">
+        <div class="layui-inline">
+            <div class="layui-inline" style="margin-right: 40px">
+                <!--<label class="layui-form-label" style="width: 130px">搜索：</label>-->
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 220px" placeholder="请输入公司名称" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <a><i class="layui-icon">&#xe615;&nbsp;查询</i> </a>
+            <a><i class="layui-icon add">&#xe608;&nbsp;增加</i> </a>
+        </div>
+    </form>
+</section>
+<form class="layui-form">
+    <table class="layui-table">
+        <tr>
+            <td width="30">编号</td>
+            <td width="250">企业名称</td>
+            <td>设备名称</td>
+            <td>联系人</td>
+            <td width="120">联系电话</td>
+            <td>操作</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>西安久诺网络技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>代江平</td>
+            <td><span class="code">17868802602</span></td>
+            <td>
+                <a><i class="layui-icon xq">&#xe60a;&nbsp;查看详情</i></a>
+            </td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>西安久诺网络技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>代江平</td>
+            <td><span class="code">17868802602</span></td>
+            <td>
+                <a><i class="layui-icon xq">&#xe60a;&nbsp;查看详情</i></a>
+            </td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>西安久诺网络技术有限公司</td>
+            <td>TCL王牌电视机</td>
+            <td>代江平</td>
+            <td><span class="code">17868802602</span></td>
+            <td>
+                <a><i class="layui-icon xq">&#xe60a;&nbsp;查看详情</i></a>
+            </td>
+        </tr>
+    </table>
+</form>
+<!--详情-->
+<div id="xq" style="padding: 10px;display: none">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: -3px">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">维修企业信息</legend>
+    </fieldset>
+    <section class="panel panel-padding border">
+        <form class="layui-form">
+            <div class="layui-inline">
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">企业名称：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="西安久诺网络技术有限公司" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">企业税号：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="1524564612MH" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">地址：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="西安欧亚学院" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">联系人：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="代江平" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">联系电话：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="17868804701" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 15px">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">维修设备</legend>
+    </fieldset>
+    <form class="layui-form">
+        <table class="layui-table">
+            <tr>
+                <td width="20">编号</td>
+                <td width="150">维修设备名称</td>
+                <td width="130">出厂编码</td>
+                <td width="100">规格型号</td>
+                <td width="180">生产厂家</td>
+                <td width="122">操作</td>
+            </tr>
+            <tr>
+                <td width="20">01</td>
+                <td>TCL王牌电视机</td>
+                <td><span class="code">96558412M2522</span></td>
+                <td><img src="../../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
+                <td>陕西电视机厂有限公司</td>
+                <td>
+                    <a><i class="layui-icon sbxxck">&#xe60a;查看</i></a>
+                    <a><i class="layui-icon edit">&#xe642;修改</i></a>
+                </td>
+            </tr>
+            <tr>
+                <td width="20">02</td>
+                <td>TCL王牌电视机</td>
+                <td><span class="code">96558412M2522</span></td>
+                <td><img src="../../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
+                <td>陕西电视机厂有限公司</td>
+                <td>
+                    <a><i class="layui-icon sbxxck">&#xe60a;查看</i> </a>
+                    <a><i class="layui-icon edit">&#xe642;修改</i> </a>
+                </td>
+            </tr>
+        </table>
+        <div class="layui-inline" style="margin-left: 43%;margin-top: 60px">
+            <div class="layui-input-inline">
+                <a class="layui-btn layui-btn-small layui-btn-danger" lay-filter="demo1">
+                    删除
+                </a>
+                <a class="layui-btn layui-btn-small" lay-filter="demo1">
+                   编辑
+                </a>
+                <a class="layui-btn layui-btn-small layui-btn-normal"  lay-filter="demo1">
+                    取消
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+<!--增加-->
+<div id="add" style="display: none;padding: 10px;">
+    <p><i class="layui-icon" style="font-size: 22px;font-weight: bold">&#xe62a;</i><span style="font-size: 16px;">维修企业信息</span></p>
+    <section class="panel panel-padding border" style="margin-top: 15px">
+        <form class="layui-form">
+            <div class="layui-inline">
+                <div class="layui-inline" style="margin-left: -40px">
+                    <label class="layui-form-label" style="width: 130px">企业名称：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="西安久诺网络技术有限公司" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-left: -40px">
+                    <label class="layui-form-label" style="width: 130px">企业税号：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="1524564612MH" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-left: -40px">
+                    <label class="layui-form-label" style="width: 130px">地址：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="西安欧亚学院" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-left: -40px">
+                    <label class="layui-form-label" style="width: 130px">交付使用日期：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="17868804701" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-left: -40px">
+                    <label class="layui-form-label" style="width: 130px">联系人：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="代江平" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-left: -40px">
+                    <label class="layui-form-label" style="width: 130px">联系电话：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="17868804701" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <p style="margin-top: 15px"> <i class="layui-icon" style="font-size: 22px;font-weight: bold">&#xe62a;</i><span style="font-size: 16px;">维修设备</span></p>
+       <section class="panel panel-padding border" style="margin-top: 15px">
+           <form class="layui-form">
+               <div class="layui-inline">
+                   <div class="layui-inline">
+                       <label class="layui-form-label" style="width: 130px">维修设备名称：</label>
+                       <div class="layui-input-inline" style="width: 190px">
+                           <select name="modules" lay-verify="required" lay-search="">
+                               <option value="">请选择状态</option>
+                               <option value="1">电视机</option>
+                               <option value="2">电话</option>
+                               <option value="2">手机</option>
+                               <option value="2">电脑</option>
+                           </select>
+                       </div>
+                   </div>
+                   <div class="layui-inline" style="margin-left: 40px">
+                       <label class="layui-form-label" style="width: 130px">出厂编码：</label>
+                       <div class="layui-input-inline">
+                           <input type="text" style="width: 190px" placeholder="出厂编码" lay-verify="required" autocomplete="off" class="layui-input">
+                       </div>
+                   </div>
+
+                   <div class="layui-inline" style="margin-right: 40px">
+                       <label class="layui-form-label" style="width: 130px">出厂商家：</label>
+                       <div class="layui-input-inline">
+                           <input type="text" style="width: 190px" placeholder="出厂商家" lay-verify="required" autocomplete="off" class="layui-input">
+                       </div>
+                   </div>
+
+                   <div class="layui-inline" style="margin-right: 40px">
+                       <label class="layui-form-label" style="width: 130px">规格型号：</label>
+                       <div class="layui-input-inline">
+                           <input type="text" style="width: 190px" placeholder="规格型号" lay-verify="required" autocomplete="off" class="layui-input">
+                       </div>
+                   </div>
+               </div>
+           </form>
+       </section>
+        <div class="layui-inline" style="margin-left: 43%;margin-top: 60px">
+            <div class="layui-input-inline">
+                <a class="layui-btn layui-btn" lay-filter="demo1">
+                    保存
+                </a>
+                <a class="layui-btn layui-btn" lay-filter="demo1">
+                    取消
+                </a>
+            </div>
+        </div>
+</div>
+<!--设备信息查看-->
+<div id="sbxxck" style="display: none;padding: 10px;">
+    <table class="layui-table layui-form">
+        <tr>
+            <td width="50">故障</td>
+            <td width="320">图片</td>
+            <td>描述</td>
+        </tr>
+        <tr>
+            <td>故障1</td>
+            <td>
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+            </td>
+            <td>该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪</td>
+        </tr>
+        <tr>
+            <td>故障2</td>
+            <td>
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+            </td>
+            <td>该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪该问题很奇怪</td>
+        </tr>
+        <tr>
+            <td>工作照</td>
+            <td>
+                <img src="../../image/sheb.jpg" alt="" class="guz">
+            </td>
+            <td>工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照工作照</td>
+        </tr>
+    </table>
+</div>
+</body>
+<script src="../../../js/layui/layui.js"></script>
+<script src="../../../js/jquery-1.12.4.min.js"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function(){
+        var form = layui.form()
+            ,layer = layui.layer
+            ,layedit = layui.layedit
+            ,laydate = layui.laydate;
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+        //自定义验证规则
+        form.verify({
+            title: function(value){
+                if(value.length < 5){
+                    return '标题至少得5个字符啊';
+                }
+            }
+            ,pass: [/(.+){6,12}$/, '密码必须6到12位']
+            ,content: function(value){
+                layedit.sync(editIndex);
+            }
+        });
+        //监听提交
+        form.on('submit(demo1)', function(data){
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            })
+            return false;
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $(".xq").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'详情',
+                area: ['100%', '100%'],
+                content: $('#xq')
+            });
+        });
+        $(".add,.edit").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'增加/修改',
+                area: ['80%', '80%'],
+                content: $('#add')
+            });
+        });
+        $(".sbxxck").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'设备信息',
+                area: ['100%', '100%'],
+                content: $('#sbxxck')
+            });
+        });
+    })
+</script>
+</html>
