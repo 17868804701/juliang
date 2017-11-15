@@ -35,12 +35,6 @@
             "sub": [
               {
                 "id": 13,
-                "url": "/juliang/page/ywgl/weixiuManger/wxManger.html",
-                "name": "维修申报列表",
-                "iconfont": ""
-              },
-              {
-                "id": 13,
                 "url": "/juliang/page/ywgl/weixiuManger/qiyexxManger.html",
                 "name": "企业信息管理",
                 "iconfont": ""
@@ -110,14 +104,32 @@
       {
         "id": 1,
         "url": "",
-        "name": "学生信息管理",
+        "name": "企业平台",
         "iconfont": "&#xe613;",
         "sub": [
           {
             "id": 5,
-            "url": "/jqadmin/html/studentInfo.html",
-            "name": "学生信息管理",
-            "iconfont": "&#xe637;"
+            "url": "/juliang/page/qiyepingtai/shebeiInfo.html",
+            "name": "设备信息管理",
+            "iconfont": ""
+          },
+          {
+            "id": 5,
+            "url": "/juliang/page/qiyepingtai/wxManger.html",
+            "name": "维修管理",
+            "iconfont": ""
+          },
+          {
+            "id": 13,
+            "url": "/juliang/page/qiyepingtai/wbManger.html",
+            "name": "维保管理",
+            "iconfont": ""
+          },
+          {
+            "id": 13,
+            "url": "/juliang/page/qiyepingtai/shManger.html",
+            "name": "售后管理",
+            "iconfont": ""
           }
         ]
       }

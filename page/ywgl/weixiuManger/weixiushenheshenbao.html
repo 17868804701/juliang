@@ -113,6 +113,7 @@
         </tr>
     </table>
 </form>
+</body>
 <!--详情-->
 <div id="xq" style="display: none;padding: 10px">
     <fieldset class="layui-elem-field layui-field-title" style="margin-top: -3px">
@@ -210,7 +211,6 @@
         </div>
     </div>
 </div>
-</body>
 <!--设备信息查看、-->
 <div id="show_sbxx" style="display: none;padding: 10px">
     <table class="layui-table layui-form">
@@ -290,7 +290,6 @@
         </tr>
         <tr>
             <td style="border: 0">
-                <span style="font-size: 17px;position:absolute;margin-top: 10px;margin-left: -110px;">星级评价:</span>
                 <img src="../../image/pj1.png" class="pj" alt="">
                 <img src="../../image/pj2.png" class="pj" alt="">
                 <img src="../../image/pj2.png" class="pj" alt="">
@@ -300,38 +299,32 @@
         </tr>
         <tr>
             <td style="border: 0">
-                <div class="layui-input-block">
+                <div style="margin-left: 6%">
                     <textarea placeholder="请输入评价内容" class="layui-textarea" style="margin-left: -15px;margin-top: 20px"></textarea>
                 </div>
             </td>
         </tr>
-
     </table>
     <div class="layui-inline" style="margin-top: 30px">
         <div class="layui-input-inline">
-            <a class="layui-btn layui-btn-small" lay-filter="demo1">
+            <a class="layui-btn layui-btn" lay-filter="demo1">
                 确认
             </a>
         </div>
     </div>
-    <!--<div>-->
-        <!--<div style="margin-top: 20px">-->
-
-        <!--</div>-->
-    <!--</div>-->
 </div>
 <!--投诉-->
 <div id="tousu" style="display: none;padding: 10px;text-align: center">
     <span>投诉</span>
     <div style="width: 80%;margin-left: 13%">
-        <textarea placeholder="请输入评价内容" class="layui-textarea" style="margin-left: -15px;margin-top: 20px;height: 130px"></textarea>
+        <textarea placeholder="请输入投诉内容" class="layui-textarea" style="margin-left: -15px;margin-top: 20px;height: 130px"></textarea>
     </div>
     <div class="layui-inline" style="margin-top: 30px">
         <div class="layui-input-inline">
-            <a class="layui-btn layui-btn-small" lay-filter="demo1">
+            <a class="layui-btn layui-btn" lay-filter="demo1">
                 确认
             </a>
-            <a class="layui-btn layui-btn-small" lay-filter="demo1">
+            <a class="layui-btn layui-btn" lay-filter="demo1">
                 取消
             </a>
         </div>
@@ -414,7 +407,7 @@
             layer.open({
                 type: 1,
                 title:'评价',
-                area: ['700px', '400px;'],
+                area: ['500px', '400px;'],
                 content: $('#pingjia')
             });
         });
