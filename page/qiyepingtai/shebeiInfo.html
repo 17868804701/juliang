@@ -52,7 +52,7 @@
                 </div>
                 <a><i class="layui-icon">&#xe615;&nbsp;查询</i> </a>
                 <a><i class="layui-icon add">&#xe608;&nbsp;增加</i> </a>
-                <a><i class="layui-icon delete">&#xe640;&nbsp;批量删除</i> </a>
+                <a><i class="layui-icon">&#xe640;&nbsp;批量删除</i> </a>
             </div>
         </form>
     </section>
@@ -64,6 +64,8 @@
                 <td>规格型号</td>
                 <td>生产厂家</td>
                 <td>出厂编码</td>
+                <td>出厂时间</td>
+                <td>级别</td>
                 <td>操作</td>
             </tr>
             <tr>
@@ -72,10 +74,12 @@
                 <td><img src="../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
                 <td>陕西省电视机厂</td>
                 <td><span class="code">98452154HGF51</span></td>
+                <td><span class="code">2017-10-10</span></td>
+                <td><span class="code">2</span></td>
                 <td>
                     <a><i class="layui-icon edit">&#xe642;&nbsp;编辑</i> </a>
                     <a><i class="layui-icon xq">&#xe63c;&nbsp;详情</i> </a>
-                    <a><i class="layui-icon delete">&#xe640;&nbsp;删除</i> </a>
+                    <a><i class="layui-icon">&#xe640;&nbsp;删除</i> </a>
                 </td>
             </tr>
             <tr>
@@ -84,10 +88,13 @@
                 <td><img src="../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
                 <td>陕西省电视机厂</td>
                 <td><span class="code">98452154HGF51</span></td>
+                <td><span class="code">2017-10-10</span></td>
+                <td><span class="code">3</span></td>
+
                 <td>
                     <a><i class="layui-icon edit">&#xe642;&nbsp;编辑</i> </a>
                     <a><i class="layui-icon xq">&#xe63c;&nbsp;详情</i> </a>
-                    <a><i class="layui-icon delete">&#xe640;&nbsp;删除</i> </a>
+                    <a><i class="layui-icon">&#xe640;&nbsp;删除</i> </a>
                 </td>
             </tr>
             <tr>
@@ -96,10 +103,12 @@
                 <td><img src="../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
                 <td>陕西省电视机厂</td>
                 <td><span class="code">98452154HGF51</span></td>
+                <td><span class="code">2014-10-10</span></td>
+                <td><span class="code">2</span></td>
                 <td>
                     <a><i class="layui-icon edit">&#xe642;&nbsp;编辑</i> </a>
                     <a><i class="layui-icon xq">&#xe63c;&nbsp;详情</i> </a>
-                    <a><i class="layui-icon delete">&#xe640;&nbsp;删除</i> </a>
+                    <a><i class="layui-icon">&#xe640;&nbsp;删除</i> </a>
                 </td>
             </tr>
             <tr>
@@ -108,10 +117,12 @@
                 <td><img src="../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
                 <td>陕西省电视机厂</td>
                 <td><span class="code">98452154HGF51</span></td>
+                <td><span class="code">2015-10-10</span></td>
+                <td><span class="code">3</span></td>
                 <td>
                     <a><i class="layui-icon edit">&#xe642;&nbsp;编辑</i> </a>
                     <a><i class="layui-icon xq">&#xe63c;&nbsp;详情</i> </a>
-                    <a><i class="layui-icon delete">&#xe640;&nbsp;删除</i> </a>
+                    <a><i class="layui-icon">&#xe640;&nbsp;删除</i> </a>
                 </td>
             </tr>
         </table>
@@ -147,6 +158,22 @@
             <label class="layui-form-label" style="height: 35px">出厂编码</label>
             <div class="layui-input-inline">
                 <input type="text" style="width: 200px" placeholder="请输出厂编码" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="layui-inline">
+            <label class="layui-form-label" style="height: 35px">出厂时间</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 200px" placeholder="请输出厂时间" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="layui-inline">
+            <label class="layui-form-label" style="height: 35px">等级</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 200px" placeholder="1" lay-verify="required" autocomplete="off" class="layui-input">
             </div>
         </div>
         <br>
@@ -196,7 +223,7 @@
             layer.open({
                 type: 1,
                 title: '设备信息',
-                area: ['30%', '60%'],
+                area: ['30%', '75%'],
                 content: $('#shebei')
             });
         });

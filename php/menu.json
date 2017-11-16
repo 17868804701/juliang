@@ -96,6 +96,12 @@
                 "url": "/juliang/page/ywgl/shouhou/shouhoushenbaoshenhe.html",
                 "name": "售后申报审核",
                 "iconfont": ""
+              },
+              {
+                "id": 13,
+                "url": "/juliang/page/ywgl/shouhou/shouhouhtManger.html",
+                "name": "售后合同管理",
+                "iconfont": ""
               }
             ]
           }
@@ -129,6 +135,12 @@
             "id": 13,
             "url": "/juliang/page/qiyepingtai/shManger.html",
             "name": "售后管理",
+            "iconfont": ""
+          },
+          {
+            "id": 13,
+            "url": "/juliang/page/qiyepingtai/htgl.html",
+            "name": "合同管理",
             "iconfont": ""
           }
         ]
