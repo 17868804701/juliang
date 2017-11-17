@@ -50,7 +50,7 @@
                 </div>
             </div>
             <a><i class="layui-icon">&#xe615;&nbsp;查询</i> </a>
-            <!--<a><i class="layui-icon add">&#xe640;&nbsp;批量删除</i> </a>-->
+            <a><i class="layui-icon shenbao">&#xe608;&nbsp;添加申报</i> </a>
         </div>
     </form>
 </section>
@@ -188,30 +188,30 @@
             <td><a><i class="layui-icon show_sbxx">&#xe60a;查看</i> </a></td>
         </tr>
     </table>
-    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 10px">
-        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">维修费用信息</legend>
-    </fieldset>
-    <span style="font-size: 16px">维修费用： <span class="code">500元</span></span>
-    <table class="layui-table" style="width: 600px">
-        <tr>
-            <td colspan="3" style="text-align: center"> <span style="font-weight: bold">辅助人员信息</span></td>
-        </tr>
-        <tr>
-            <td width="200">姓名</td>
-            <td width="200">电话</td>
-            <td width="200">支付方式</td>
-        </tr>
-        <tr>
-            <td>代江平</td>
-            <td><img src="../image/phone.png" alt="" class="statue" width="20">&nbsp;17868802602</td>
-            <td><img src="../image/zfb.png" alt="" class="statue" width="20">&nbsp;支付宝</td>
-        </tr>
-        <tr>
-            <td>黄森</td>
-            <td><img src="../image/phone.png" alt="" class="statue" width="20">&nbsp;17868802602</td>
-            <td><img src="../image/wx.png" alt="" class="statue" width="20">&nbsp;微信付款</td>
-        </tr>
-    </table>
+    <!--<fieldset class="layui-elem-field layui-field-title" style="margin-top: 10px">-->
+        <!--<legend style="font-weight: 800;font-size: 16px;color:#009688 ">维修费用信息</legend>-->
+    <!--</fieldset>-->
+    <!--<span style="font-size: 16px">维修费用： <span class="code">500元</span></span>-->
+    <!--<table class="layui-table" style="width: 600px">-->
+        <!--<tr>-->
+            <!--<td colspan="3" style="text-align: center"> <span style="font-weight: bold">辅助人员信息</span></td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td width="200">姓名</td>-->
+            <!--<td width="200">电话</td>-->
+            <!--<td width="200">支付方式</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>代江平</td>-->
+            <!--<td><img src="../image/phone.png" alt="" class="statue" width="20">&nbsp;17868802602</td>-->
+            <!--<td><img src="../image/zfb.png" alt="" class="statue" width="20">&nbsp;支付宝</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>黄森</td>-->
+            <!--<td><img src="../image/phone.png" alt="" class="statue" width="20">&nbsp;17868802602</td>-->
+            <!--<td><img src="../image/wx.png" alt="" class="statue" width="20">&nbsp;微信付款</td>-->
+        <!--</tr>-->
+    <!--</table>-->
     <div class="layui-inline" style="margin-left: 45%;margin-top: 30px;margin-bottom: 30px">
         <div class="layui-input-inline">
             <a class="layui-btn layui-btn-small" lay-filter="demo1">
@@ -317,10 +317,83 @@
         </div>
     </div>
 </div>
+<!--添加申报-->
+<div id="shenbao" style="display: none;padding: 10px">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">维修设备信息</legend>
+    </fieldset>
+    <form class="layui-form">
+        <div class="layui-inline">
+            <div class="layui-inline" style="margin-right: 40px">
+                <label class="layui-form-label" style="width: 130px">设备名称：</label>
+                <div class="layui-input-inline" style="width: 190px">
+                    <select name="modules" lay-verify="required" lay-search="">
+                        <option value="">请选择状态</option>
+                        <option value="1">电视机</option>
+                        <option value="2">洗衣机</option>
+                        <option value="2">电风扇</option>
+                        <option value="2">电冰箱</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline" style="margin-right: 40px">
+                <label class="layui-form-label" style="width: 130px">规格型号：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 190px" placeholder="TCL" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline" style="margin-right: 40px">
+                <label class="layui-form-label" style="width: 130px">生产厂家：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 190px" placeholder="陕西省电视机厂" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline" style="margin-right: 40px">
+                <label class="layui-form-label" style="width: 130px">出厂编号：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 190px" placeholder="58784JH512" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline" style="margin-right: 40px">
+                <label class="layui-form-label" style="width: 130px">出厂日期：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 190px" placeholder="1998-10-10" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline" style="margin-right: 40px">
+                <label class="layui-form-label" style="width: 130px">级别：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 190px" placeholder="1" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+    </form>
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">添加附件</legend>
+    </fieldset>
+    <input type="file" name="file" class="layui-upload-file">
+    <input type="file" name="file1" lay-type="file" class="layui-upload-file">
+    <span style="color: grey">*描述过多的时候显示文件上传</span>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label" style="margin-left: -85px;width: 200px">请填写设备故障描述</label>
+        <div>
+            <textarea placeholder="请输入故障描述,最多200字" maxlength="200" class="layui-textarea"></textarea>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit="" lay-filter="demo1">立即申报</button>
+            <button type="button" class="layui-btn layui-btn-primary">取消</button>
+        </div>
+    </div>
+</div>
 <script src="../../js/layui/layui.js"></script>
 <script src="../../js/jquery-1.12.4.min.js"></script>
 <script>
-    layui.use(['form', 'layedit', 'laydate'], function () {
+    layui.use(['form', 'layedit', 'laydate','upload'], function () {
         var form = layui.form()
             , layer = layui.layer
             , layedit = layui.layedit
@@ -346,6 +419,21 @@
                 title: '最终的提交信息'
             })
             return false;
+        });
+        layui.upload({
+            url: '' //上传接口
+            ,success: function(res){ //上传成功后的回调
+                console.log(res)
+            }
+        });
+
+        layui.upload({
+            url: '/test/upload.json'
+            ,elem: '#test' //指定原始元素，默认直接查找class="layui-upload-file"
+            ,method: 'get' //上传接口的http类型
+            ,success: function(res){
+                LAY_demo_upload.src = res.url;
+            }
         });
     });
 </script>
@@ -381,6 +469,15 @@
                 title:'投诉',
                 area: ['700px', '360px;'],
                 content: $('#tousu')
+            });
+        });
+
+        $(".shenbao").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'申报',
+                area: ['97%', '90%;'],
+                content: $('#shenbao')
             });
         });
 
