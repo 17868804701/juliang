@@ -65,6 +65,7 @@
             <td>生产厂家</td>
             <td>出厂编号</td>
             <td>状态</td>
+            <!--<td>付款情况</td>-->
             <td>操作</td>
         </tr>
         <tr>
@@ -74,6 +75,7 @@
             <td>陕西省电视机厂</td>
             <td><span class="code">MHG1548612023</span></td>
             <td><img src="../image/5.png" width="25" class="statue" alt="">已申报</td>
+            <!--<td><img src="../image/5.png" width="25" class="statue" alt="">未付款</td>-->
             <td>
                 <!--<a><i class="layui-icon">&#xe642;&nbsp;修改</i> </a>-->
                 <a><i class="layui-icon xq">&#xe60a;&nbsp;详情</i> </a>
@@ -87,6 +89,7 @@
             <td>陕西省电视机厂</td>
             <td><span class="code">MHG1548612023</span></td>
             <td><img src="../image/6.png" width="25" class="statue" alt="">已完成</td>
+            <!--<td><img src="../image/6.png" width="25" class="statue" alt="">已到账</td>-->
             <td>
                 <!--<a><i class="layui-icon">&#xe642;&nbsp;修改</i> </a>-->
                 <a><i class="layui-icon xq">&#xe60a;&nbsp;详情</i> </a>
@@ -100,6 +103,7 @@
             <td>陕西省电视机厂</td>
             <td><span class="code">MHG1548612023</span></td>
             <td><img src="../image/1.png" width="25" class="statue" alt="">待评价</td>
+            <!--<td><img src="../image/1.png" width="25" class="statue" alt="">已到账</td>-->
             <td>
                 <!--<a><i class="layui-icon">&#xe600;&nbsp;评价</i> </a>-->
                 <a><i class="layui-icon xq">&#xe60a;&nbsp;详情</i> </a>
@@ -113,8 +117,9 @@
             <td>陕西省电视机厂</td>
             <td><span class="code">MHG1548612023</span></td>
             <td><img src="../image/2.png" width="25" class="statue" alt="">待确认</td>
+            <!--<td><img src="../image/2.png" width="25" class="statue" alt="">未到账</td>-->
             <td>
-                <!--<a><i class="layui-icon">&#xe616;&nbsp;确认</i> </a>-->
+                <a><i class="layui-icon ok">&#xe616;&nbsp;提交确认</i> </a>
                 <a><i class="layui-icon xq">&#xe60a;&nbsp;详情</i> </a>
                 <a><i class="layui-icon add">&#xe640;&nbsp;删除</i> </a>
             </td>
@@ -491,6 +496,19 @@
                 content: $('#shenbao')
             });
         });
+
+        $(".ok").on("click",function () {
+            layer.confirm('确认付给总平台200元，提交后不可更改', {
+                btn: ['取消', '确认'] //可以无限个按钮
+                ,btn3: function(index, layero){
+                    //按钮【按钮三】的回调
+                }
+            }, function(index, layero){
+                //按钮【按钮一】的回调
+            }, function(index){
+                //按钮【按钮二】的回调
+            });
+        })
 
         $(".pj").on("click", function () {
             $(this).attr("src", "../image/pj1.png");

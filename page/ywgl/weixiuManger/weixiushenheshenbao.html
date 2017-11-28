@@ -87,6 +87,16 @@
             <td>001</td>
             <td>西安久诺网络技术有限公司</td>
             <td>陕西省西安市西安欧亚学院</td>
+            <td><img src="../../image/2.png" width="25" class="statue" alt="">待完成</td>
+            <td>
+                <a><i class="layui-icon xq">&#xe60a;&nbsp;查看详情</i></a>
+                <a><i class="layui-icon ok">&#xe616;&nbsp;确认收到付款</i> </a>
+            </td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>西安久诺网络技术有限公司</td>
+            <td>陕西省西安市西安欧亚学院</td>
             <td><img src="../../image/2.png" width="25" class="statue" alt="">待评价</td>
             <td>
                 <a><i class="layui-icon xq">&#xe60a;&nbsp;查看详情</i></a>
@@ -142,6 +152,15 @@
                         <input type="text" style="width: 190px" placeholder="17868804701" lay-verify="required" autocomplete="off" class="layui-input">
                     </div>
                 </div>
+
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">维修总费用：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="500元" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+
             </div>
         </form>
     </section>
@@ -403,7 +422,18 @@
                 content: $('#tousu')
             });
         });
-
+        $(".ok").on("click",function () {
+            layer.confirm('确认收到平台付款100元？提交后不可更改', {
+                btn: ['确认', '取消'] //可以无限个按钮
+                ,btn3: function(index, layero){
+                    //按钮【按钮三】的回调
+                }
+            }, function(index, layero){
+                //按钮【按钮一】的回调
+            }, function(index){
+                //按钮【按钮二】的回调
+            });
+        })
         $(".pj").on("click",function () {
             $(this).attr("src","../../image/pj1.png");
             $(this).prevAll(".pj").attr("src","../../image/pj1.png");

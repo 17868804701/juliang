@@ -146,7 +146,7 @@
                 <td><img src="../../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
                 <td>陕西电视机厂有限公司</td>
                 <td>
-                    <a><i class="layui-icon sbxxck">&#xe60a;查看</i></a>
+                    <!--<a><i class="layui-icon sbxxck">&#xe60a;查看</i></a>-->
                     <a><i class="layui-icon edit">&#xe642;修改</i></a>
                 </td>
             </tr>
@@ -157,7 +157,7 @@
                 <td><img src="../../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
                 <td>陕西电视机厂有限公司</td>
                 <td>
-                    <a><i class="layui-icon sbxxck">&#xe60a;查看</i> </a>
+                    <!--<a><i class="layui-icon sbxxck">&#xe60a;查看</i> </a>-->
                     <a><i class="layui-icon edit">&#xe642;修改</i> </a>
                 </td>
             </tr>
@@ -167,9 +167,9 @@
                 <a class="layui-btn layui-btn-small layui-btn-danger" lay-filter="demo1">
                     删除
                 </a>
-                <a class="layui-btn layui-btn-small" lay-filter="demo1">
-                   编辑
-                </a>
+                <!--<a class="layui-btn layui-btn-small" lay-filter="demo1">-->
+                   <!--编辑-->
+                <!--</a>-->
                 <a class="layui-btn layui-btn-small layui-btn-normal"  lay-filter="demo1">
                     取消
                 </a>
@@ -233,12 +233,14 @@
             <td>设备名称</td>
             <td>出厂编码</td>
             <td>出厂商家</td>
+            <td>出厂时间</td>
             <td>规格型号</td>
         </tr>
         <tr>
             <td>电视机</td>
             <td><span class="code">676899HUU9879</span></td>
             <td>陕西省电视机厂</td>
+            <td>2010-10-10</td>
             <td><img src="../../image/gg.png" alt="" class="statue" width="20">&nbsp;TCL</td>
         </tr>
     </table>
@@ -334,6 +336,14 @@
                     <input type="text" style="width: 190px" placeholder="规格型号" lay-verify="required" autocomplete="off" class="layui-input">
                 </div>
             </div>
+            <br>
+            <br>
+            <div class="layui-inline">
+                <label class="layui-form-label" style="width: 130px;height: 35px">出厂时间：</label>
+                <div class="layui-input-inline">
+                    <input type="text" style="width: 190px" placeholder="2017-10-10" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
 
             <div class="layui-inline" style="margin-top: 60px">
                 <div class="layui-input-inline">
@@ -399,6 +409,17 @@
                 content: $('#add')
             });
         });
+
+        $(".edit").on("click",function () {
+            layer.open({
+                type: 1,
+                title:'修改',
+                area: ['400px', '500px'],
+                content: $('#add_shebei')
+            });
+        });
+
+
         $(".sbxxck").on("click",function () {
             layer.open({
                 type: 1,
