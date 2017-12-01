@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3071482e-e19f-44b0-ae6c-0863ad69a96c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/ywgl/shouhou/shouhoushenbaoshenhe.html" afterPath="$PROJECT_DIR$/page/ywgl/shouhou/shouhoushenbaoshenhe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/ywgl/weibaoManger/weibaoshenbaoshenhe.html" afterPath="$PROJECT_DIR$/page/ywgl/weibaoManger/weibaoshenbaoshenhe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/ywgl/weixiuManger/weixiushenheshenbao.html" afterPath="$PROJECT_DIR$/page/ywgl/weixiuManger/weixiushenheshenbao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/qiyepingtai/htgl.html" afterPath="$PROJECT_DIR$/page/qiyepingtai/htgl.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="2113">
+              <caret line="358" column="7" lean-forward="true" selection-start-line="358" selection-start-column="7" selection-end-line="358" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -41,32 +40,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weixiushenheshenbao.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/ywgl/weixiuManger/weixiushenheshenbao.html">
+      <file leaf-file-name="htgl.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/qiyepingtai/htgl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4560">
-              <caret line="190" column="7" lean-forward="false" selection-start-line="190" selection-start-column="7" selection-end-line="192" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weibaoshenbaoshenhe.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/ywgl/weibaoManger/weibaoshenbaoshenhe.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4320">
-              <caret line="180" column="16" lean-forward="false" selection-start-line="180" selection-start-column="16" selection-end-line="180" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shouhoushenbaoshenhe.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page/ywgl/shouhou/shouhoushenbaoshenhe.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4392">
-              <caret line="176" column="13" lean-forward="true" selection-start-line="176" selection-start-column="13" selection-end-line="176" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="216">
+              <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +119,6 @@
         <option value="$PROJECT_DIR$/webview.html" />
         <option value="$PROJECT_DIR$/page/qiyepingtai/wbManger.html" />
         <option value="$PROJECT_DIR$/page/ywgl/shouhou/weituoqiyeInfo.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/page/ywgl/shouhou/fuwuqiyeInfo.html" />
         <option value="$PROJECT_DIR$/page/wxggl/weixiugongInfo.html" />
         <option value="$PROJECT_DIR$/page/ywgl/weixiuManger/qiyexxManger.html" />
@@ -148,10 +128,11 @@
         <option value="$PROJECT_DIR$/page/qiyepingtai/wxManger.html" />
         <option value="$PROJECT_DIR$/page/qiyepingtai/shManger.html" />
         <option value="$PROJECT_DIR$/page/wxggl/zilanyewu.html" />
-        <option value="$PROJECT_DIR$/page/qiyepingtai/htgl.html" />
         <option value="$PROJECT_DIR$/page/ywgl/weixiuManger/weixiushenheshenbao.html" />
         <option value="$PROJECT_DIR$/page/ywgl/weibaoManger/weibaoshenbaoshenhe.html" />
         <option value="$PROJECT_DIR$/page/ywgl/shouhou/shouhoushenbaoshenhe.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/page/qiyepingtai/htgl.html" />
       </list>
     </option>
   </component>
@@ -189,8 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -203,9 +182,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="juliang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="juliang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="juliang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="juliang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qiyepingtai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,6 +234,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -676,12 +690,13 @@
       <workItem from="1511744438660" duration="17784000" />
       <workItem from="1511779523127" duration="2731000" />
       <workItem from="1511918577550" duration="740000" />
-      <workItem from="1511929693690" duration="175000" />
+      <workItem from="1511929693690" duration="831000" />
+      <workItem from="1512093047779" duration="3929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308059000" />
+    <option name="totallyTimeSpent" value="312644000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,9 +709,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31958762" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -709,20 +725,20 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20558739" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20208333" sideWeight="0.49535194" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20845272" sideWeight="0.5046481" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1020,69 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="521" column="8" lean-forward="true" selection-start-line="521" selection-start-column="8" selection-end-line="530" selection-end-column="15" />
-          <folding>
-            <element signature="n#div#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#legend#0;n#fieldset#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#2;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#3;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#4;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#5;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#legend#0;n#fieldset#0;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#4;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
-            <marker date="1511864585351" expanded="false" signature="9124:9171" ph="..." />
-            <marker date="1511864585351" expanded="false" signature="9236:9251" ph="..." />
-            <marker date="1511864585351" expanded="false" signature="9342:9354" ph="..." />
-            <marker date="1511864585351" expanded="false" signature="9407:9425" ph="..." />
-            <marker date="1511864585351" expanded="false" signature="9440:9457" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="22651:26374" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="22669:22701" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="22743:25558" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="22790:25546" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="22807:23003" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="23020:25529" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="23041:23694" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="23096:23114" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="23115:23672" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="23172:23645" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="23261:23614" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="23715:24054" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="23770:23788" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="23789:24032" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="23846:24005" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24075:24418" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24130:24148" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24149:24396" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24206:24369" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24439:24785" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24494:24512" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24513:24763" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24570:24736" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24806:25152" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24861:24879" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24880:25130" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="24937:25103" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="25173:25511" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="25229:25247" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="25248:25489" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="25305:25462" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="25620:25730" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="25649:25696" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="25902:25913" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="25989:26249" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="26042:26073" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="26109:26234" ph="..." />
-            <marker date="1511864585351" expanded="true" signature="26272:26315" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,27 +1053,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/qiyepingtai/htgl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="194" column="12" lean-forward="false" selection-start-line="194" selection-start-column="12" selection-end-line="194" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,9 +1078,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/ywgl/shouhou/shouhoushenbaoshenhe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4392">
-          <caret line="176" column="13" lean-forward="true" selection-start-line="176" selection-start-column="13" selection-end-line="176" selection-end-column="13" />
+        <state relative-caret-position="648">
+          <caret line="419" column="44" lean-forward="true" selection-start-line="419" selection-start-column="44" selection-end-line="419" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2113">
+          <caret line="358" column="7" lean-forward="true" selection-start-line="358" selection-start-column="7" selection-end-line="358" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/qiyepingtai/htgl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
