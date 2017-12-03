@@ -60,6 +60,7 @@
             <td>编号</td>
             <td>公司名称</td>
             <td>税号</td>
+            <td>合同编号</td>
             <td width="40">负责人</td>
             <td width="85">负责人联系方式</td>
             <td width="50">合同金额</td>
@@ -80,6 +81,7 @@
             <td>001</td>
             <td>西安久诺网络技术有限公司</td>
             <td><span class="code">HJY41648964</span></td>
+            <td><span class="code">41648964</span></td>
             <td><span class="code">代江平</span></td>
             <td><span class="code">17868804017</span></td>
             <td>1500元</td>
@@ -102,6 +104,7 @@
             <td>001</td>
             <td>西安久诺网络技术有限公司</td>
             <td><span class="code">HJY41648964</span></td>
+            <td><span class="code">41648964</span></td>
             <td><span class="code">代江平</span></td>
             <td><span class="code">17868804017</span></td>
             <td>1500元</td>
@@ -124,6 +127,7 @@
             <td>001</td>
             <td>西安久诺网络技术有限公司</td>
             <td><span class="code">HJY41648964</span></td>
+            <td><span class="code">41648964</span></td>
             <td><span class="code">代江平</span></td>
             <td><span class="code">17868804017</span></td>
             <td>1500元</td>
@@ -147,16 +151,62 @@
 </body>
 <!--详情-->
 <div id="xq" style="display: none;padding: 10px">
-    <fieldset class="layui-elem-field layui-field-title" style="margin-top: -3px">
-        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">基本信息</legend>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: -3px;text-align: center">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">聚良机电维保合同管理</legend>
     </fieldset>
-    <section class="panel panel-padding border">
+    <div class="layui-inline" style="width: 100%;margin-bottom: 10px">
+        <div class="layui-inline" style="float: left;">
+            <label class="layui-form-label" style="width: 130px">甲方负责人：</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 190px;border:0;border-bottom: 1px solid #999999" placeholder="代江平" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-inline" style="margin-right: 40px;float: right">
+            <label class="layui-form-label" style="width: 130px">乙方负责人：</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 190px;border:0;border-bottom: 1px solid #999999;margin-right:40px" placeholder="黄森" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+    </div>
+    <p><i class="layui-icon" style="font-size: 20px;font-weight: bold;">&#xe62a;</i><span style="font-size: 16px;">甲方信息</span></p>
+    <section class="panel panel-padding border" style="margin-top: 10px;margin-bottom: 10px">
         <form class="layui-form">
             <div class="layui-inline">
                 <div class="layui-inline" style="margin-right: 40px">
                     <label class="layui-form-label" style="width: 130px">公司名称：</label>
                     <div class="layui-input-inline">
                         <input type="text" style="width: 190px" placeholder="西安久诺网络技术有限公司" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">企业税号：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="1524564612MH" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">负责人：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="代江平" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">联系方式：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="17868804701" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <p><i class="layui-icon" style="font-size: 20px;font-weight: bold;">&#xe62a;</i><span style="font-size: 16px;">乙方信息</span></p>
+    <section class="panel panel-padding border" style="margin-top: 10px">
+        <form class="layui-form">
+            <div class="layui-inline">
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">公司名称：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="欧亚久诺网络技术有限公司" lay-verify="required" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-inline" style="margin-right: 40px">
@@ -329,16 +379,62 @@
 </div>
 <!--增加-->
 <div style="display: none;padding: 10px" id="add">
-    <fieldset class="layui-elem-field layui-field-title" style="margin-top: -3px">
-        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">基本信息</legend>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: -3px;text-align: center">
+        <legend style="font-weight: 800;font-size: 16px;color:#009688 ">聚良机电维保合同管理</legend>
     </fieldset>
-    <section class="panel panel-padding border">
+    <div class="layui-inline" style="width: 100%;margin-bottom: 10px">
+        <div class="layui-inline" style="float: left;">
+            <label class="layui-form-label" style="width: 130px">甲方负责人：</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 190px;border:0;border-bottom: 1px solid #999999" placeholder="代江平" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-inline" style="margin-right: 40px;float: right">
+            <label class="layui-form-label" style="width: 130px">乙方负责人：</label>
+            <div class="layui-input-inline">
+                <input type="text" style="width: 190px;border:0;border-bottom: 1px solid #999999;margin-right:40px" placeholder="黄森" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+    </div>
+    <p><i class="layui-icon" style="font-size: 20px;font-weight: bold;">&#xe62a;</i><span style="font-size: 16px;">甲方信息</span></p>
+    <section class="panel panel-padding border" style="margin-top: 10px;margin-bottom: 10px">
         <form class="layui-form">
             <div class="layui-inline">
                 <div class="layui-inline" style="margin-right: 40px">
                     <label class="layui-form-label" style="width: 130px">公司名称：</label>
                     <div class="layui-input-inline">
                         <input type="text" style="width: 190px" placeholder="西安久诺网络技术有限公司" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">企业税号：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="1524564612MH" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">负责人：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="代江平" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">联系方式：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="17868804701" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <p><i class="layui-icon" style="font-size: 20px;font-weight: bold;">&#xe62a;</i><span style="font-size: 16px;">乙方信息</span></p>
+    <section class="panel panel-padding border" style="margin-top: 10px">
+        <form class="layui-form">
+            <div class="layui-inline">
+                <div class="layui-inline" style="margin-right: 40px">
+                    <label class="layui-form-label" style="width: 130px">公司名称：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" style="width: 190px" placeholder="欧亚久诺网络技术有限公司" lay-verify="required" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-inline" style="margin-right: 40px">
